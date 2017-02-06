@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.css">
+ <style>
+body {
+    background-image: url("https://media.giphy.com/media/G9AtOOs2sRaRG/giphy.gif");
+}
+</style>
+  </head>
+  <body>
+  <h1>
+    Here are a few recommendations <%=@result%> 
+    <img src="<%=@pic%>">
+    </h1>
+    <button onclick="goBack()">Go Back</button>
+  <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+  </body>
+</html>

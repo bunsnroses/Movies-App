@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+body {
+    background-image: url("https://secure.static.tumblr.com/9d5daffccda7b2d075d102a7074a2768/51nnsyv/33hnmcef7/tumblr_static_dwsvr1g8zqos4co000cs48ckc_640_v2.gif");
+}
+h3 {
+    color: black;
+}
+</style>
+  </head>
+  <body>
+    <h1>
+    Need a Movie Recommendation?
+    </h1>
+  <h2>
+    Answer a Few Questions in Order to Find the Perfect Title For You
+    </h2>
+  <h3>
+    What Movie Genres Do You Prefer?
+  </h3>
+  <div class="container">              
+  <form method ="POST" action="/movie">
+  <input type="radio" name="genre" value="action" checked> Action<br>
+  <input type="radio" name="genre" value="comedy"> Comedy<br>
+  <input type="radio" name="genre" value="drama"> Drama<br>
+  <input type="radio" name="genre" value="horror"> Horror<br>
+  <input type="radio" name="genre" value="fantasy"> Fantasy<br>
+  <input type="radio" name="genre" value="suspense/thriller"> Suspense/Thriller<br>
+  <input type="radio" name="genre" value="animation"> Animation<br>
+  <input type="radio" name="genre" value="sci-fi"> Sci-Fi
+    </div>
+  <h3>
+    How Are You Feeling Today?
+  </h3>
+  <div class="container">              
+
+  <input type="radio" name="currentmood" value="excited" checked> Excited<br>
+  <input type="radio" name="currentmood" value="apathetic"> Bored/Apathetic<br>
+  <input type="radio" name="currentmood" value="unfulfilled"> Unfulfilled<br>
+  <input type="radio" name="currentmood" value="moody"> Moody
+    <input type="submit">
+</form> 
+</div>
+  <div class="container">              
+  <ul class="pager">
+    <li><a href="#">Next</a></li>
+  </ul>
+    </div>
+  </body>
+</html>
